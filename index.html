@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <header class="image">
+            <img  class="imag"src="logo.png">
+            <div class="header">
+                <h2>MaDiApp</h2>
+              </div>   
+        </header>
+    <header id="leftMenu">
+        <a href="#" class="btn" id="botonX" onclick="cerrarMenu()">X</a>
+        <nav class="leftNav">
+            <a href="#">Inicio</a>
+            <a href="Hoteles.html">Hoteles</a>
+            <a href="#">Restaurantes</a>
+            <a href="#">Transporte</a>
+            <a href="#">Rutas</a>
+            <a href="#">Favoritos</a>   
+        </nav>
+    </header>
+    <span class="menu" id="barras" onclick="abrirMenu()"><i class="fa-solid fa-bars"></i></span>
+    <script src="main.js"></script>
+
+      
+      <h2 style="text-align:center">Huila Destino Turístico</h2>
+      
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img class="imag1" src="sa.png" width="100%" height="30%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img class="imag2" src="dtc.png" width="100%" height="30%" >
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img class="imag3" src="ca.png" width="100%" height="30%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img class="imag4" src="nh.png" width="100%"height="30%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img class="imag5" src="cg.png"  width="100%"height="30%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img class="imag6" src="sb.png" width="100%"height="30%" >
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="sa.png" style="width:100% " style="height: 30%;" onclick="currentSlide(1)" alt="San Agustin">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="dtc.png" style="width:100%"style="height: 30%;" onclick="currentSlide(2)" alt="Desierto de la tatacoa">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="ca.png" style="width:100%"style="height: 30%;" onclick="currentSlide(3)" alt="Cristo Acostado">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="nh.png" style="width:100%"style="height: 30%;" onclick="currentSlide(4)" alt="Nevado del Huila">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="cg.png" style="width:100%" style="height: 30%;"onclick="currentSlide(5)" alt="Cueva de los guacharos">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="sb.png" style="width:100%"style="height: 30%;" onclick="currentSlide(6)" alt="Salto de los bordones">
+          </div>
+        </div>
+      </div>
+      <div class="map" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <h3> MAPA DEL HUILA</h3>
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":557,"width":753,"zoom":8,"queryString":"Huila, Colombia","place_id":"ChIJCzCnagAjO44Rvf5euiPn0bo","satellite":false,"centerCoord":[2.391261941229845,-74.97922541782344],"cid":"0xbad1e723ba5efebd","lang":"es","cityUrl":"/angola/huila-443961","cityAnchorText":"Mapa de Huila, Lubango, Angola","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"890573"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=890573';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/es/map-embed">1 Map</a></div>
+</body>
+</html>
